@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bgimg{
+    height: 100vh;
+    width: 100%;
+    background-image: url("pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.form{
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.62);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form h1::after{
+    width: 110px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: rgb(0,0,88);
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    transform: translate(-50px);
+}
+
+.inputfield{
+    /* background-color: rgb(255,255,255); */
+    margin: 15px, 40px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    height: 55px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.inputfield i{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+form p{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+form p a{
+    text-decoration: none;
+    color: red;
+}
+
+.butt{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+.butt button{
+    flex-basis: 48%;
+    background-color: blue;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 1s;
+    
+}
+
+.input-group{
+height: 280px;
+}
+
+.butt button.disable{
+    background-color: rgb(193,193,193);
+    color: black;
+}
